@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.Frame {
+  font-family: "Agbalumo", cursive;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+  max-width: 1280px;
+  flex-direction: row;
+
+  .left {
+    flex: 0.7;
+    padding: 2rem;
+    text-align: left;
+  }
+  .right {
+    flex: 0.3;
+    padding: 2rem;
+    text-align: left;
+
+    img {
+      width: 250px;
+      height: auto;
+    }
+  }
+}
