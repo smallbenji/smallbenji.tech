@@ -9,10 +9,10 @@ function App() {
 					<div className="TitleBox">
 						<h1>smallbenji✨</h1>
 						<h3>{"<Code is life />"}</h3>
+						<p>A simple guy with a big passion for programming🚀</p>
 					</div>
-					<p>A simple guy with a big passion for programming🚀</p>
 
-					<h2>Projects</h2>
+					<h2 className="ProjectTitle">Projects</h2>
 					<div className="Projects">
 						<div className="Project">
 							<h2>Fynsdistrikt.dk</h2>
@@ -91,8 +91,10 @@ function App() {
 					alt="cloudflare"
 				/>
 			</div>
-			<h1 className="TimelineTitle">My Timeline</h1>
-			<hr />
+			<div className="MyTimeline">
+				<h1 className="TimelineTitle">My Timeline</h1>
+				<hr />
+			</div>
 			<Timeline>
 				<TimelineComponent
 					title="Created first prod app"

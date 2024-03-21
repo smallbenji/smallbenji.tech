@@ -9,9 +9,20 @@
 
 body {
 	font-family: "Agbalumo", cursive;
+	color: white;
 }
 
+@keyframes Fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 .Frame {
+	animation: Fade 2s ease-in-out;
+
 	font-family: "Agbalumo", cursive;
 	display: flex;
 	flex-wrap: wrap;
@@ -36,6 +47,8 @@ body {
 			h3 {
 				margin: 0px;
 			}
+
+			color: white;
 		}
 
 		.Projects {
@@ -73,6 +86,9 @@ body {
 }
 
 .Languages {
+	opacity: 0; /* Initially hidden */
+	animation: Fade 2s ease-in-out forwards; /* Animation to fade in */
+	animation-delay: 0.5s; /* Delay the animation */
 	img {
 		height: 50px;
 		margin-left: 5px;
@@ -80,9 +96,73 @@ body {
 	}
 }
 
+.MyTimeline {
+	opacity: 0; /* Initially hidden */
+	animation: Fade 2s ease-in-out forwards; /* Animation to fade in */
+	animation-delay: 1s;
+}
+
+.timeline {
+	opacity: 0; /* Initially hidden */
+	animation: Fade 2s ease-in-out forwards; /* Animation to fade in */
+	animation-delay: 1.5s;
+}
+
 #tsparticles {
 	canvas {
 		position: fixed;
 		z-index: 1 !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#root {
+		padding: 0;
+	}
+
+	.timeline-content {
+		width: 70% !important;
+	}
+
+	.ProjectTitle {
+		margin-left: 10px;
+	}
+
+	.Projects {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.Frame {
+		flex-direction: column-reverse;
+		.left {
+			width: 100vw;
+			padding: 0;
+			.TitleBox {
+				margin: auto;
+				margin-left: 10px;
+			}
+
+			.Projects {
+				grid-template-columns: repeat(2, 1fr);
+
+				.Project {
+					width: 100%;
+				}
+			}
+		}
+		.right {
+			flex: 1;
+			padding-bottom: 0px;
+
+			img {
+				border-radius: 50%;
+				object-fit: cover;
+				height: 250px;
+				width: 250px;
+				margin: auto;
+				display: block;
+			}
+		}
 	}
 }
