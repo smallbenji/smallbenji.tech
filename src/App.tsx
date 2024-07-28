@@ -2,6 +2,8 @@ import "./App.scss";
 import { Timeline, TimelineComponent } from "./Components/Timeline/Timeline";
 
 function App() {
+	document.title = "smallbenji✨";
+
 	return (
 		<>
 			<div className="Frame">

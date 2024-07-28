@@ -1,4 +1,6 @@
 const Archive = () => {
+	document.title = "Archive";
+
 	return (
 		<div>
 			<a href="/">Go back</a>
