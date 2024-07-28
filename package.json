@@ -12,6 +12,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router": "^6.25.1",
+    "react-router-dom": "^6.25.1",
     "react-tsparticles": "^2.12.2",
     "sass": "^1.69.5",
     "tsparticles": "^3.3.0",

@@ -12,9 +12,17 @@ function App() {
 						<p>A simple guy with a big passion for programming🚀</p>
 					</div>
 
-					<h2 className="ProjectTitle">Projects</h2>
+					<h2 className="ProjectTitle">Check out the archive</h2>
 					<div className="Projects">
-						<div className="Project">
+						<div
+							className="Project"
+							onClick={() => {
+								document.location.href = "/archive";
+							}}
+						>
+							<h2>Archive</h2>
+						</div>
+						{/* <div className="Project">
 							<h2>Fynsdistrikt.dk</h2>
 						</div>
 						<div className="Project">
@@ -25,7 +33,7 @@ function App() {
 						</div>
 						<div className="Project">
 							<h2>QuoteBitch</h2>
-						</div>
+						</div> */}
 					</div>
 					<a href="https://www.github.com/smallbenji">
 						<h2>Checkout my github</h2>
@@ -97,20 +105,20 @@ function App() {
 			</div>
 			<Timeline>
 				<TimelineComponent
-					title="Created first prod app"
-					desc="In 2023 i started my first application which is getting used today, the name of the app is fynsdistrikt.dk"
-				/>
-				<TimelineComponent
-					title="Started programming"
-					desc="I started programming at the age of 10, I started programming simple Batch scripts"
+					title="Birth"
+					desc="I was born in 20. Oktober 2005"
 				/>
 				<TimelineComponent
 					title="First computer"
 					desc="I got my first computer at the age of 2, and began fixing them with the help of my dad"
 				/>
 				<TimelineComponent
-					title="Birth"
-					desc="I was born in 20. Oktober 2005"
+					title="Started programming"
+					desc="I started programming at the age of 10, I started programming simple Batch scripts"
+				/>
+				<TimelineComponent
+					title="Created first prod app"
+					desc="In 2023 i started my first application which is getting used today, the name of the app is fynsdistrikt.dk"
 				/>
 			</Timeline>
 		</>
