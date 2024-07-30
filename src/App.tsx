@@ -5,7 +5,7 @@ function App() {
 	document.title = "smallbenji✨";
 
 	return (
-		<>
+		<div className="MainFrame">
 			<div className="Frame">
 				<div className="left">
 					<div className="TitleBox">
@@ -123,7 +123,7 @@ function App() {
 					desc="In 2023 i started my first application which is getting used today, the name of the app is fynsdistrikt.dk"
 				/>
 			</Timeline>
-		</>
+		</div>
 	);
 }
 

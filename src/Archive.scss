@@ -1,0 +1,30 @@
+.Archive {
+	background-color: #242424;
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+
+	.Box {
+		background-color: white;
+		width: 80%;
+		border-radius: 5px;
+		margin: auto;
+		color: black;
+		margin-bottom: 10px;
+
+		display: flex;
+		.left {
+			display: flex;
+			flex-direction: column;
+			width: 400px;
+			padding: 5px;
+		}
+
+		.screenshot {
+			width: 50%;
+			height: auto;
+			aspect-ratio: 16/9;
+			border-radius: 5px;
+		}
+	}
+}
