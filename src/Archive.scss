@@ -1,7 +1,7 @@
 .Archive {
 	background-color: #242424;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	margin: 0px;
 
 	.Box {
@@ -10,21 +10,42 @@
 		border-radius: 5px;
 		margin: auto;
 		color: black;
-		margin-bottom: 10px;
+		margin-top: 10px;
 
 		display: flex;
+		justify-content: space-between;
 		.left {
 			display: flex;
 			flex-direction: column;
 			width: 400px;
 			padding: 5px;
+			margin: auto;
 		}
 
 		.screenshot {
 			width: 50%;
 			height: auto;
 			aspect-ratio: 16/9;
-			border-radius: 5px;
+			border-radius: 0px 5px 5px 0px;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.Archive {
+		.Box {
+			width: 90%;
+			flex-direction: column-reverse;
+			.left {
+				width: 100%;
+				hr {
+					width: 80%;
+				}
+			}
+			.screenshot {
+				width: 100%;
+				border-radius: 5px 5px 0px 0px;
+			}
 		}
 	}
 }

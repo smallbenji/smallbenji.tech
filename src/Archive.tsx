@@ -17,9 +17,11 @@ const Archive = () => {
 						activities happening on the camp.
 						<br />
 						<br />
+						<hr />
 						<a href="https://fynsdistrikt.smallbenji.tech">
-							Check it out here
-						</a>
+							Product
+						</a>{" "}
+						| <a href="https://smallbenji.tech">Link to project</a>
 					</p>
 				</div>
 				<img src="./fynsdistrikt.png" className="screenshot" />
@@ -35,8 +37,30 @@ const Archive = () => {
 						and it could be used for job applications.
 						<br />
 						<br />
-						<a href="https://cv.smallbenji.tech">
-							Check it out here
+						<hr />
+						<a href="https://cv.smallbenji.tech">Product</a> |{" "}
+						<a href="https://github.com/smallbenji/cv">
+							Link to project
+						</a>
+					</p>
+				</div>
+				<img src="./cv.png" className="screenshot" />
+			</div>
+			<div className="Box">
+				<div className="left">
+					<h1>GatBot</h1>
+					<p>
+						When i studied at Syddansk Erhvervsskole i was tasked
+						with creating a website, <br /> which would be a copy of
+						my CV, the purpose of this was so i could show of my
+						skills <br />
+						and it could be used for job applications.
+						<br />
+						<br />
+						<hr />
+						<a href="https://cv.smallbenji.tech">Product</a> |{" "}
+						<a href="https://github.com/smallbenji/cv">
+							Link to project
 						</a>
 					</p>
 				</div>
