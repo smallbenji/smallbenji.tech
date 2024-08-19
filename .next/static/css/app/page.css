@@ -1,0 +1,113 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/page.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+.page_Languages__kiFwj {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page_Image__BujNF {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./src/app/Home.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+body {
+  color: white;
+}
+
+.MainFrame {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.MainFrame .Frame {
+  display: flex;
+}
+.MainFrame .Frame .left {
+  flex: 0.75 1;
+  padding: 10px;
+}
+.MainFrame .Frame .left .TitleBox h1 {
+  margin: 0;
+  font-size: 50px;
+}
+.MainFrame .Frame .left .TitleBox h3 {
+  margin: 0;
+  font-size: 25px;
+}
+.MainFrame .Frame .left .TitleBox p {
+  font-size: 15px;
+}
+.MainFrame .Frame .left Link {
+  text-decoration: none;
+}
+.MainFrame .Frame .left .ArchieveButton {
+  width: 100%;
+  margin: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+.MainFrame .Frame .left .ArchieveButton h2 {
+  text-decoration: none;
+}
+.MainFrame .Frame .left .ArchieveButton:hover {
+  background-color: gray;
+}
+.MainFrame .Frame .left a {
+  display: flex;
+}
+.MainFrame .Frame .left a img {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  margin-top: 10px;
+}
+.MainFrame .Frame .right {
+  flex: 0.25 1;
+}
+.MainFrame .Frame .right img {
+  width: 250px;
+  height: 100%;
+  border-radius: 25px;
+}
+.MainFrame .InformationBox {
+  background-color: white;
+  color: black;
+  width: 60vw;
+  border-radius: 25px;
+  padding: 20px;
+  margin-top: 30px;
+}
+.MainFrame .InformationBox h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .MainFrame .Frame {
+    flex-direction: column-reverse;
+  }
+  .MainFrame .Frame .right img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .MainFrame .InformationBox {
+    width: 90%;
+  }
+}
