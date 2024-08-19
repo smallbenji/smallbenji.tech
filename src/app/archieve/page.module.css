@@ -1,0 +1,19 @@
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.Project {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+.Project:hover {
+  transform: scale(1.05);
+}
