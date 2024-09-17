@@ -1,0 +1,10 @@
+{
+	"projects": [
+		{
+			"id": 1,
+			"title": "fynsdistrikt.dk",
+			"description": "Website for Fyns Distrikt",
+			"image": "fynsdistrikt.png"
+		}
+	]
+}
