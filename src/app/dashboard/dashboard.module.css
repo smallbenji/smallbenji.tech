@@ -1,0 +1,34 @@
+.dashboardProjects {
+	background-color: white;
+	width: fit-content;
+	padding: 10px;
+	border: solid black 1px;
+	border-radius: 5px;
+	color: black;
+}
+
+.dashboardProject {
+	display: flex;
+}
+.projectImg {
+	width: 150px;
+	height: 150px;
+}
+
+.projectImg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.projectDesc {
+	margin-left: 10px;
+}
+.large {
+	font-size: 2rem;
+	margin: 0;
+}
+
+.default {
+	font-size: 1rem;
+}

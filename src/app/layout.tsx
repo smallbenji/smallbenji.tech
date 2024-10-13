@@ -1,26 +1,25 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Particle from "./(Components)/Particles";
-import SessionProviderWrapper from "@/app/(Components)/SessionProviderWrapper";
-import { AppProps } from "next/app";
 import React from "react";
+import SessionProviderWrapper from "@/components/sessionProviderWrapper";
+import { ThemeProvider } from "@/components/theme-provider";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function RootLayout({
-	children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function Layout({ children }: { children: React.ReactNode }) {
 	return (
-		<SessionProviderWrapper>
-			<html lang="en">
-				<head>
-					<link rel="icon" href="/favicon.ico" />
-				</head>
-				<body className={inter.className}>
-					<Particle />
-					<main>{children}</main>
-				</body>
-			</html>
-		</SessionProviderWrapper>
+		<html lang="en">
+			<head></head>
+			<body className={inter.className}>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="system"
+					enableSystem
+					disableTransitionOnChange
+				>
+					<SessionProviderWrapper>{children}</SessionProviderWrapper>
+				</ThemeProvider>
+			</body>
+		</html>
 	);
 }
