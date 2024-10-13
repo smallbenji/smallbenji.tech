@@ -1,5 +1,5 @@
 import React from "react";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 
 import styles from "./dashboard.module.css";
 

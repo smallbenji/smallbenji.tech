@@ -1,8 +1,7 @@
 import React from "react";
-import AuthComponent from "../../components/authComponent";
 import RoleCanView from "../../components/roleCanView";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 
 const Test = async () => {
 	const session = await getServerSession(authOptions);
@@ -10,8 +9,6 @@ const Test = async () => {
 	return (
 		<>
 			<h1>Test</h1>
-
-			<AuthComponent />
 
 			<RoleCanView role={["admin", "TestRole"]}>
 				<h1>Yeps</h1>

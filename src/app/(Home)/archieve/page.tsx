@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./page.module.css";
-import Fynsdistrikt from "../../../../public/fynsdistrikt.png";
 import { db } from "@/components/db";
 import { projectsTable } from "@/components/db/schema";
 import { Button } from "@/components/ui/button";
@@ -52,10 +50,10 @@ export default async function Portfolio() {
 									<>
 										<a
 											href={project.sourceLink}
-											className={styles.Link}
+											className=""
 										>
-											<div className={styles.Button}>
-												<h3>Visit</h3>
+											<div className="pt-5 pb-5">
+												<Button>Source</Button>
 											</div>
 										</a>
 									</>

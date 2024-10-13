@@ -1,7 +1,6 @@
 import React from "react";
 
 import Image from "next/image";
-import styles from "./page.module.css";
 
 import "./Home.scss";
 import Link from "next/link";
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
 export default async function Home() {
 	return (
 		<>
-			<main className={styles.main}>
+			<main>
 				<div className="p-0">
 					<section>
 						<div className="flex flex-col-reverse sm:flex-row sm:w-2/5 sm:m-auto">
