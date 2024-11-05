@@ -27,6 +27,7 @@ export default async function Portfolio() {
 									className="aspect-video object-cover rounded-sm"
 									width={800}
 									height={450}
+									loading="eager"
 								/>
 							</div>
 							<div className="m-5 mt-0">
