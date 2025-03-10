@@ -17,16 +17,15 @@ export default async function Portfolio() {
 				{projects.map((project) => {
 					return (
 						<div
-							className="w-11/12 bg-zinc-900 m-auto rounded-sm"
+							className="w-11/12 bg-zinc-900 m-auto rounded-sm flex flex-col"
 							key={project.id}
 						>
-							<div className="aspect-video object-cover m-5 rounded-sm pt-5">
+							<div className="relative aspect-video object-cover m-5 rounded-sm pt-5">
 								<Image
 									src={project.projectImageUrl ?? ""}
 									alt={`Picture of ${project.projectName}`}
 									className="aspect-video object-cover rounded-sm"
-									width={800}
-									height={450}
+									fill
 									loading="eager"
 								/>
 							</div>
@@ -41,7 +40,7 @@ export default async function Portfolio() {
 											href={project.projectLink}
 											className=""
 										>
-											<div className="pt-5 pb-5">
+											<div className="pt-5">
 												<Button>Visit</Button>
 											</div>
 										</a>
@@ -53,7 +52,7 @@ export default async function Portfolio() {
 											href={project.sourceLink}
 											className=""
 										>
-											<div className="pt-5 pb-5">
+											<div className="pt-5">
 												<Button>Source</Button>
 											</div>
 										</a>
