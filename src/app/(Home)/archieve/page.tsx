@@ -9,60 +9,47 @@ export default async function Portfolio() {
 	const projects = await db.select().from(projectsTable);
 
 	return (
-		<main>
-			<Link href="/">
-				<Button>{"<-"} Back</Button>
-			</Link>
-			<div className="w-full sm:w-1/2 sm:m-auto">
-				{projects.map((project) => {
+		<main className="grid grid-cols-1 md:grid-cols-2 gap-8 m-8">
+			{
+				projects.map(x => {
 					return (
-						<div
-							className="w-11/12 bg-zinc-900 m-auto rounded-sm flex flex-col"
-							key={project.id}
-						>
-							<div className="relative aspect-video object-cover m-5 rounded-sm pt-5">
+						<div className="w-full h-full bg-zinc-900 p-5 rounded-md flex flex-col">
+							<div className="relative w-full aspect-video p-5">
 								<Image
-									src={project.projectImageUrl ?? ""}
-									alt={`Picture of ${project.projectName}`}
-									className="aspect-video object-cover rounded-sm"
+									src={x.projectImageUrl ?? ""}
 									fill
-									loading="eager"
+									alt={x.projectName ?? ""}
 								/>
 							</div>
-							<div className="m-5 mt-0">
-								<h2 className="text-3xl">
-									{project.projectName}
-								</h2>
-								<p>{project.projectDescription}</p>
-								{project.projectLink ? (
-									<>
-										<a
-											href={project.projectLink}
-											className=""
-										>
-											<div className="pt-5">
-												<Button>Visit</Button>
-											</div>
+							<div className="mt-2">
+								<h2 className="text-2xl">{x.projectName}</h2>
+								{x.projectDescription}
+							</div>
+							<div className="flex-1"></div>
+							<div className="flex gap-4">
+								{
+									x.projectLink && (
+										<a href={x.projectLink}>
+											<Button >
+												Visit
+											</Button>
 										</a>
-									</>
-								) : null}
-								{project.sourceLink ? (
-									<>
-										<a
-											href={project.sourceLink}
-											className=""
-										>
-											<div className="pt-5">
-												<Button>Source</Button>
-											</div>
+									)
+								}
+								{
+									x.sourceLink && (
+										<a href={x.sourceLink}>
+											<Button>
+												Source
+											</Button>
 										</a>
-									</>
-								) : null}
+									)
+								}
 							</div>
 						</div>
-					);
-				})}
-			</div>
+					)
+				})
+			}
 		</main>
 	);
 }

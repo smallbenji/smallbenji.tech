@@ -1,6 +1,7 @@
 import Header from "@/components/header";
 import Particle from "@/components/particles";
 import React from "react";
+import "./Globals.scss";
 
 export default function RootLayout({
 	children,
@@ -8,7 +9,7 @@ export default function RootLayout({
 	return (
 		<>
 			<Header />
-			<Particle />
+			{/* <Particle /> */}
 			{children}
 		</>
 	);
